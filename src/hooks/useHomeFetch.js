@@ -5,7 +5,7 @@ import API from '../API';
 
 const intialState = {
     page: 0,
-    result: [],
+    results: [],
     total_pages: 0,
     total_results: 0
 };
@@ -13,7 +13,7 @@ const intialState = {
 
 export const useHomeFetch = () => {
 
-    const [state, setState] = useState();
+    const [state, setState] = useState(intialState);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
 
@@ -46,6 +46,4 @@ export const useHomeFetch = () => {
     }, []);
 
     return {state, loading, error};
-
-
-}
+};
