@@ -20,7 +20,7 @@ const SearchBar = ({ setSearchTerm }) => {
 
         const timer = setTimeout(() => {
             setSearchTerm(state);
-        }, 500) 
+        }, 600) 
 
         return () => clearTimeout(timer);
 
