@@ -21,8 +21,6 @@ const Home = () => {
 
     const { state, loading, error, setSearchTerm } = useHomeFetch();
 
-    console.log(state);
-
     return (
         <>
             {state.results[0] ?
