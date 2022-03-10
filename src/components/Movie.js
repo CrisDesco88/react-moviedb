@@ -1,5 +1,5 @@
 import React from 'react';
-import { Params, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 //Config
 import { IMAGE_BASE_URL, POSTER_SIZE } from '../config';
