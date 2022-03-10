@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 100px;
     background: var(--darkGrey);
     padding: 0 20px;
@@ -11,7 +12,9 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
     display: flex;
     justify-content: space-around;
+    max-width: var(--maxWidth);
     width: 100%;
+    
 
     .column {
         display: flex;
@@ -34,6 +37,7 @@ export const Content = styled.div`
     @media screen and (max-width: 768px) {
         flex-direction: column;
         align-items: center;
+        padding-bottom: 1.15em;
         
     }
 
